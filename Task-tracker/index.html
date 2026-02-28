@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aesthetic Daily Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <h1>🌸 My Daily Space</h1>
+    <p id="date"></p>
+
+    <!-- Mood -->
+    <div class="card">
+        <h3>Today's Mood</h3>
+        <div class="mood-options">
+            <span onclick="setMood('🌞')">🌞</span>
+            <span onclick="setMood('🌸')">🌸</span>
+            <span onclick="setMood('🌧️')">🌧️</span>
+            <span onclick="setMood('🔥')">🔥</span>
+        </div>
+        <p id="moodDisplay"></p>
+    </div>
+
+    <!-- Tasks -->
+    <div class="card">
+        <h3>Today's Tasks</h3>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Add a task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+        <p id="productivity"></p>
+    </div>
+
+    <!-- Journal -->
+    <div class="card">
+        <h3>Daily</h3>
+        <textarea id="journalInput" placeholder="Write your thoughts..."></textarea>
+        <button onclick="saveJournal()">Save Journal</button>
+        <p id="saveMsg"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
